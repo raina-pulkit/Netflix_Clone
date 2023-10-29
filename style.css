@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    background: black;
+    color: #fff;
+}
+
+section{
+    border-bottom: 4px solid gray;
+    padding: 20px;
+}
+
+.intro-image{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.65), hsla(0, 0%, 0%, 0.65)), url("images/header-image.png") no-repeat center center / cover;
+    padding: 2rem 10rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-content: center;
+}
+
+.buttons{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border-color: rgba(0,0,0,0);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.sign-in{
+    
+    background-color: #e50914;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+nav div button{
+    border-width: 1px;
+    border-color: white;
+    outline: 0;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.lang-btn{
+    width: 7rem;
+    height: 1.75rem;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: scale(1.2);
+    color: white;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.img{
+    padding: 0 0 0 2.5px;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 45px;
+    letter-spacing: 0.05rem;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 50;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.header-content{
+    position: absolute;
+    width: 75%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 16px;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.email-input{
+    margin: 0 20px;
+    border-radius: 5px;
+    width: 10px;
+    flex:1;
+    border-width: 4px;
+    border-color: white;
+    outline: 0;
+    background: transparent;
+    margin-left: 20px;
+    
+    min-width: 16px;
+    min-height: 16px;
+    padding: 1.1rem;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+.submit{
+    height: 3.75rem;
+    margin: 0 20px;
+    border: 0;
+    border-radius: 5px;
+    transform: scale(1.25);
+    background-color: #e50914;
+    color: white;
+    padding: 0 2rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.features{
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+}
+
+.container-custom{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-video{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.features-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 8rem;
+}
+
+.features-text-header{
+    font-family: 'Rubik', sans-serif;
+    font-size: 45px;
+    letter-spacing: 0.05rem;
+}
+
+.features-text > p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 50;
+    font-size: 1.5rem;
+}
+
+.video{
+    position: relative;
+    display: block;
+    height: 100%;
+    padding-right:6rem;
+}
+.video>img{
+    z-index: 1;
+}
+.feature-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+}
+
+.feature-video > video{
+    mask-repeat: no-repeat;
+}
+
+.feature-2{
+    padding:0;
+}
+
+.feature-2-video{
+    padding-left: 7rem;
+}
+
+.feature-2-header{
+    width: 75%;
+}
+
+.feature-3-video{
+    transform: scale(0.85);
+    top: 0%;
+    left:7%
+}
+
+
+input[type="radio"]{
+    display: none;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0 0 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.faq h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.faq-questions{
+    width: 100%;
+    margin: 60px auto;
+    max-width: 750px;
+    padding: 0;
+}
+
+li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-questions li{
+    list-style: none;
+    width: 100%;
+    padding: 9px;
+}
+
+.faq-questions li label{
+    width: 100%;
+    display: flex;
+    background-color: #303030;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-questions li label::after{
+    content: "+";
+    font-size: 32px;
+    position: absolute;
+    right:20px;
+    transition: transform 0.5s;
+}
+
+.answer{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0; /* This hides the element initially */
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq-questions input[type="radio"]:checked + label + .answer{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq-questions input[type="radio"]:checked + label::after{
+    transform: rotate(45deg);
+}
+
+
+.faq-feedback{
+    padding: 3rem 5rem;
+    margin-bottom: 5rem;
+}
+
+.faq-feedback h3{
+    margin-bottom: 2rem;
+}
+
+.flex-box{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-data{
+    padding: 3rem 0;
+    width: 75%;
+}
+
+.foot-links{
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.foot-links > a{
+    color: #b3b3a8;
+}
+
+.footer-data > *{
+    max-width: 400rem;
+}
+
+.questions{
+    margin-bottom: 3rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b3b3a8;
+}
+
+.lang-btn.footer{
+    display: inline-flex;
+    padding: 0.5rem;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-width: 1px;
+    border-color: white;
+    outline: 0;
+    background-color: transparent;
+    border-radius: 4px;
+
+    margin-bottom: 2rem;
+}
