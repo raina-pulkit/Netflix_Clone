@@ -239,7 +239,7 @@ input[type="radio"]{
 .faq-questions{
     width: 100%;
     margin: 60px auto;
-    max-width: 750px;
+    max-width: 70%;
     padding: 0;
 }
 
@@ -254,7 +254,6 @@ li{
 .faq-questions li{
     list-style: none;
     width: 100%;
-    padding: 9px;
 }
 
 .faq-questions li label{
@@ -326,7 +325,6 @@ li{
 .foot-links{
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-    gap: 1rem;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
@@ -341,7 +339,7 @@ li{
 
 .questions{
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-size: 1.75rem;
     font-weight: 500;
     color: #b3b3a8;
@@ -353,12 +351,11 @@ li{
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 0 0 1.7rem;
+    margin: 0 0 0 0.7rem;
     border-width: 1px;
     border-color: white;
     background-color: transparent;
     border-radius: 4px;
-    transform: scale(1.5);
     overflow: hidden;
 }
 
@@ -393,39 +390,45 @@ video{
 
     .features-text{
         padding: 0;
+        width: 80%;
+        align-items: center;
+        text-align: center;
     }
 
     .features-text > *{
-        transform: scale(0.75);
-        margin: 0;
+        margin-top: 5%;
     }
 
     .video{
         padding: 0;
-        transform: scale(0.75);
         position: absolute;
         top:80%;
     }
 
-    .features-text{
-        align-items: center;
-        text-align: center;
-    }
     p{
         text-align: center;
     }
 
     .feature-2-video{
-        top: 60%;
-        transform: translate(0.75);
+        top: 80%;
+        transform: scale(0.75);
     }
 }
 
-@media (max-width: 750px){
+@media (max-width: 790px){
     .buttons{
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .features-text{
+        z-index:2;
+        width: 80%;
+    }
+
+    .feature-2-header{
+        width: 85%;
     }
 
     .sign-in{
@@ -446,5 +449,46 @@ video{
 
     .email-input{
         padding: 1rem;
+    }
+
+    /* .video{
+        top: 40%;
+    } */
+    .video > *{
+        transform: scale(0.90);
+    }
+}
+
+@media only screen and (max-width:640px){
+
+}
+
+@media only screen and (max-width: 570px){
+    .sign-in{
+        transform: scale(0.85);
+    }
+
+    .features{
+        height: 80vh;
+    }
+
+    .footer-data{
+        transform: scale(0.75);
+        padding: 0;
+
+    }
+
+    .feature-2-video{
+        transform: scale(0.5);
+    }
+
+    .animated-video{
+        flex-direction: column;
+    }
+    .video{
+        width: 100%;
+    }
+    .video > *{
+        transform: scale(0.75);
     }
 }
